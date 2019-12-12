@@ -28,7 +28,7 @@
     padding-bottom:20px;
 }
 
-.top_hits_items{
+.top_hits_item_banner{
     display: inline-block;
     /* border: 1px solid #666464; */
 }
@@ -50,3 +50,5 @@
     font-size: 14px;
     color: #666464;
 }
+
+@import 'top_hits_media.scss';
