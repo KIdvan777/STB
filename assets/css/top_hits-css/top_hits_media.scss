@@ -14,12 +14,10 @@
                 list-style: none;
                 display: inline-block;
                 padding: 10px;
-
             }ul>li:hover{
                 background-color: $main_green;
                 color:#fff;
             }
-
         }
 
         .top_hits_item{
@@ -36,12 +34,11 @@
 
         }
     }
-
 }
 
 @media screen and (max-width: 768px) {
-
     .top_hits_section{
+
         .top_hits_heading{
             display: block;
             width: 100%;
@@ -94,6 +91,45 @@
 
 
 @media screen and (max-width: 576px) {
+    .top_hits_section{
+
+        .top_hits{
+
+            .top_hits_item_banner {
+                img{
+                    width:50%;
+                    height: auto;
+                    position: relative;
+                }
+            }
+
+            .top_hits_item{
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                margin-bottom: 40px;
+
+                .top_hits_item__img{
+                    img{
+                        width:50%;
+                        height: auto;
+                    }
+                }
+
+                .top_hits_item__span{
+                    span{
+                        margin-top:60px;
+                        display: block;
+                        text-align: center;
+                        padding-left: 3rem;
+                        padding-right: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
 
 }
 

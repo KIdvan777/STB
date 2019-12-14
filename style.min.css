@@ -97,4 +97,8 @@ footer{margin-top:20px;background-color:#85c441}
 }@media screen and (max-width:576px){.mobile_menu .mobile_menu_ul li{width:100%;text-align:center;margin-left:0}
 .mobile_product_menu_1 .product_menu_item{width:100%;text-align:center}
 .mobile_product_menu_1 .product_menu_item img{width:54px}
+.top_hits_section .top_hits .top_hits_item_banner img{width:50%;height:auto;position:relative}
+.top_hits_section .top_hits .top_hits_item{padding-top:1rem;padding-bottom:1rem;margin-bottom:40px}
+.top_hits_section .top_hits .top_hits_item .top_hits_item__img img{width:50%;height:auto}
+.top_hits_section .top_hits .top_hits_item .top_hits_item__span span{margin-top:60px;display:block;text-align:center;padding-left:3rem;padding-right:3rem}
 }
