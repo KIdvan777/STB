@@ -45,95 +45,33 @@
                             </div>
                         </div>
 
-                        <div class="top_hits_item col-lg-2 col-md-4 col-sm-6">
-                            <div class="top_hits_item__img">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/img/asd_bulb_7.jpg'?>" alt="">
-                            </div>
-                            <div class="top_hits_item__span">
-                                <span>
-                                    Лампа светодиодная LED-A60-standard 11Вт 160-260В Е27 3000К 990Лм ASD
-                                </span>
-                            </div>
-                            <div class="top_hits_item_overlay">
-                                <div class="top_hits_item_overlay_link">
-                                    <a href="#">
-                                        подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="top_hits_item col-lg-2 col-md-4 col-sm-6">
-                            <div class="top_hits_item__img">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/img/bulb1.png'?>" alt="">
-                            </div>
-                            <div class="top_hits_item__span">
-                                <span>
-                                    Лампа светодиодная LED-A60-standard 11Вт 160-260В Е27 3000К 990Лм ASD
-                                </span>
-                            </div>
-                            <div class="top_hits_item_overlay">
-                                <div class="top_hits_item_overlay_link">
-                                    <a href="#">
-                                        подробнее
-                                    </a>
+                        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                        	<!-- Цикл WordPress -->
+                            <div class="top_hits_item col-lg-2 col-md-4 col-sm-6">
+                                <div class="top_hits_item__img">
+                                     <?php the_post_thumbnail(); ?>
+                                </div>
+                                <div class="top_hits_item__span">
+                                    <span>
+                                        <b><?php the_title(); ?></b>                                    
+                                        <?php the_excerpt(); ?>
+                                    </span>
+                                </div>
+                                <div class="top_hits_item_overlay">
+                                    <div class="top_hits_item_overlay_link">
+                                        <a href="<?php the_permalink(); ?>">
+                                            подробнее
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php endwhile; else : ?>
+                        	<p>Записей нет.</p>
+                        <?php endif; ?>
 
-                        <div class="top_hits_item col-lg-2 col-md-4 col-sm-6">
-                            <div class="top_hits_item__img">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/img/asd_bulb_6.png'?>" alt="">
-                            </div>
-                            <div class="top_hits_item__span">
-                                <span>
-                                    Лампа светодиодная LED-A60-standard 11Вт 160-260В Е27 3000К 990Лм ASD
-                                </span>
-                            </div>
-                            <div class="top_hits_item_overlay">
-                                <div class="top_hits_item_overlay_link">
-                                    <a href="#">
-                                        подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="top_hits_item col-lg-2 col-md-4 col-sm-6">
-                            <div class="top_hits_item__img">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/img/bulb2.png'?>" alt="">
-                            </div>
-                            <div class="top_hits_item__span">
-                                <span>
-                                    Лампа светодиодная LED-A60-standard 11Вт 160-260В Е27 3000К 990Лм ASD
-                                </span>
-                            </div>
-                            <div class="top_hits_item_overlay">
-                                <div class="top_hits_item_overlay_link">
-                                    <a href="#">
-                                        подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="top_hits_item col-lg-2 col-md-4 col-sm-6">
-                            <div class="top_hits_item__img">
-                                <img src="<?php echo get_template_directory_uri() . '/assets/img/bulb1.png'?>" alt="">
-                            </div>
-                            <div class="top_hits_item__span">
-                                <span>
-                                    Лампа светодиодная LED-A60-standard 11Вт 160-260В Е27 3000К 990Лм ASD
-                                </span>
-                            </div>
-                            <div class="top_hits_item_overlay">
-                                <div class="top_hits_item_overlay_link">
-                                    <a href="#">
-                                        подробнее
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
 
                     </div>
                 </div>

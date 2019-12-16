@@ -6,8 +6,7 @@
 include( get_template_directory() . '/includes/front/enqueue.php' );
 
 // stb_hooks
-
-add_action('wp_enqueue_scripts', 'stb_scripts');
+add_action( 'wp_enqueue_scripts', 'stb_scripts' );
 
 // stb_shortcodes
 
