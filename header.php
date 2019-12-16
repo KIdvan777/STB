@@ -19,11 +19,11 @@
                     </div>
                     <div class="main_menu">
                         <ul class="menu_ul">
-                            <li>COMPANY</li>
-                            <li>PRODUCTS</li>
-                            <li>BUY</li>
-                            <li>SUPPORT</li>
-                            <li>CONTACTS</li>
+                            <li><a href="#">COMPANY</a></li>
+                            <li><a href="#">PRODUCTS</a></li>
+                            <li><a href="#">BUY</a></li>
+                            <li><a href="#">SUPPORT</a></li>
+                            <li><a href="#">CONTACTS</a></li>
                             <li class="search_input">
                                 <input type="text" id="search_input">
                                     <button type="submit" name="button">
