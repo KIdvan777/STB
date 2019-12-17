@@ -8,29 +8,39 @@
 
 	<?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
     <header class="header_1">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 flex space_between">
                     <div class="logo">
-                        LOGO
+                        СТБ
                     </div>
-                    <div class="main_menu">
-                        <ul class="menu_ul">
-                            <li><a href="#">COMPANY</a></li>
-                            <li><a href="#">PRODUCTS</a></li>
-                            <li><a href="#">BUY</a></li>
-                            <li><a href="#">SUPPORT</a></li>
-                            <li><a href="#">CONTACTS</a></li>
-                            <li class="search_input">
-                                <input type="text" id="search_input">
-                                    <button type="submit" name="button">
-                                        <img  id="search_img" src="<?php echo get_template_directory_uri() . '/assets/img/search-24px.svg'?>" alt="">
-                                    </button>
-                            </li>
-                        </ul>
-                    </div>
+                    <!-- Nav main menu -->
+                    <?php
+                        if( has_nav_menu('primary') ){
+                            wp_nav_menu( [
+                                'theme_location'  => 'primary',
+                                'menu'            => 'STB Primary menu',
+                                'container'       => 'div',
+                                'container_class' => 'main_menu',
+                                'container_id'    => 'main_menu',
+                                'menu_class'      => 'menu_ul',
+                                'menu_id'         => 'menu_ul',
+                                'echo'            => true,
+                                'fallback_cb'     => 'wp_page_menu',
+                                'before'          => '',
+                                'after'           => '',
+                                'link_before'     => '',
+                                'link_after'      => '',
+                                'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                'depth'           => 0,
+                                'walker'          => '',
+                            ] );
+                        }
+                     ?>
+                     <?php echo get_search_form(); ?>
+                     
                     <div class="burger">
                         <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-button-of-three-horizontal-lines.svg'?> " alt="">
                     </div>

@@ -1,8 +1,10 @@
-jQuery('#search_input').hide();
+jQuery('.search_input').hide();
 
 jQuery( "#search_img" ).click(function() {
   // jQuery('#search_input').slideToggle();
-  jQuery('#search_input').show();
+  jQuery('.search_input').show();
+  jQuery('#search_img').hide();
+
 });
 
 

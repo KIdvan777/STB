@@ -8,10 +8,12 @@ function stb_scripts() {
 
 	wp_register_style( 'stb_google_fonts', get_template_directory_uri() . '/assets/css/google_fonts.scss' );
 	wp_register_style( 'stb_bootstrap_cdn', 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css' );
+	wp_register_style( 'stb_font_awesome_cdn','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css' );
 	wp_register_style( 'stb-style', get_stylesheet_uri() );
 
 	wp_enqueue_style( 'stb_google_fonts');
 	wp_enqueue_style( 'stb_bootstrap_cdn' );
+	wp_enqueue_style( 'stb_font_awesome_cdn' );
 	wp_enqueue_style( 'stb-style' );
 
     // Scripts
