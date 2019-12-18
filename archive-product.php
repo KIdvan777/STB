@@ -1,3 +1,4 @@
+<?php get_header(); ?>
 <!-- SECTION TOP HITS -->
     <section class="top_hits_section">
         <div class="container">
@@ -77,3 +78,5 @@
             </div>
         </div>
     </section>
+
+<?php get_footer(); ?>

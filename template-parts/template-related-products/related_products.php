@@ -48,13 +48,14 @@
 
                         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                         	<!-- Цикл WordPress -->
+                            
                             <div class="top_hits_item col-lg-2 col-md-4 col-sm-6">
                                 <div class="top_hits_item__img">
                                      <?php the_post_thumbnail(); ?>
                                 </div>
                                 <div class="top_hits_item__span">
                                     <span>
-                                        <b><?php the_title(); ?></b>                                    
+                                        <b><?php the_title(); ?></b>
                                         <?php the_excerpt(); ?>
                                     </span>
                                 </div>

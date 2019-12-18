@@ -7,11 +7,13 @@ include( get_template_directory() . '/includes/front/enqueue.php' );
 include( get_template_directory() . '/includes/setup.php' );
 include( get_template_directory() . '/includes/content_width.php' );
 include( get_template_directory() . '/includes/front/widgets.php' );
+
 // stb_hooks
 add_action( 'wp_enqueue_scripts', 'stb_scripts' );
 add_action( 'after_setup_theme', 'stb_setup' );
 add_action( 'after_setup_theme', 'stb_content_width', 0 );
 add_action( 'widgets_init', 'stb_widgets_init' );
+
 // stb_shortcodes
 
 /**
