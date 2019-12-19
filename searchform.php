@@ -10,7 +10,7 @@
                 <i class="fas fa-search"></i></button>
         </span>
         <div id="search_img" class="search_img">
-            fh
+            
         </div>
     </div>
 </form>

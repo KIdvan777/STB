@@ -3,10 +3,12 @@
 // stb_setup
 
 // stb_includes
+include( get_template_directory() . '/includes/guttenberg.php' );
 include( get_template_directory() . '/includes/front/enqueue.php' );
 include( get_template_directory() . '/includes/setup.php' );
 include( get_template_directory() . '/includes/content_width.php' );
 include( get_template_directory() . '/includes/front/widgets.php' );
+include( get_template_directory() . '/includes/tax-thumb.php' );
 
 // stb_hooks
 add_action( 'wp_enqueue_scripts', 'stb_scripts' );

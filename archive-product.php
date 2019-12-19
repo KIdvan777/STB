@@ -48,7 +48,7 @@
 
                         <?php
                             $main_page_products_view = new WP_Query( array(
-                                'post_per_page' => 6,
+                                
                                 'post_type' => 'product'
                             ));
                             while( $main_page_products_view->have_posts() ){
@@ -78,5 +78,4 @@
             </div>
         </div>
     </section>
-
 <?php get_footer(); ?>

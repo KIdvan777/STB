@@ -5,18 +5,18 @@
                 <div class="col-md-12">
                     <div class="top_hits_heading flex space_between">
                         <div class="top_hits_head">
-                            TOP HITS
+                            ХИТЫ ПРОДАЖ
                         </div>
                         <div class="top_hits_variation">
                             <ul>
                                 <li><a href="#">
-                                    Lamps</a>
+                                    STANDARD</a>
                                 </li>
                                 <li>
-                                    <a href="#">Bulbs</a>
+                                    <a href="#"> LED-PRO</a>
                                 </li>
                                 <li>
-                                    <a href="#">Office</a>
+                                    <a href="#"> LED-T8</a>
                                 </li>
                                 <li class="top_hits_arrow">
                                     <a href="#">
@@ -47,7 +47,7 @@
 
                         <?php
                             $main_page_products_view = new WP_Query( array(
-                                'post_per_page' => 6,
+                                'posts_per_page' => 6,
                                 'post_type' => 'product'
                             ));
                             while( $main_page_products_view->have_posts() ){
