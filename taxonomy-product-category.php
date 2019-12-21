@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
     <h1><?php the_archive_title(); ?></h1>
-    <?php $terms = get_terms( 'field' );
+    <?php $terms = get_terms( 'product-category' );
 
     // получаем ID термина на странице термина
     $term_id = get_queried_object_id();

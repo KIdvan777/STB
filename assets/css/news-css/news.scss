@@ -34,9 +34,15 @@
     display: flex;
 }
 
+
+.news_item img{
+    max-height: 150px;
+}
+
 .news_item span{
     font-size: 14px;
     color: #666464;
+    padding: 4px;
     .more{
         background-color: $main_green;
         text-align: center;
@@ -55,5 +61,11 @@
 .news_item .news_post_date{
     color:red;
 }
+
+.news .more_2{
+
+}
+
+
 
 @import 'news_media.scss';

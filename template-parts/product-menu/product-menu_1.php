@@ -5,7 +5,7 @@
                 <div class="col-md-12">
                     <div class="product_menu flex">
                         <?php
-                            $terms = get_terms( 'field' );
+                            $terms = get_terms( 'product-category' );
                                 if( $terms && ! is_wp_error($terms) ){
                                     foreach( $terms as $term ){?>
                                         <?php

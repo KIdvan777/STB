@@ -39,7 +39,11 @@
                             ] );
                         }
                      ?>
-                     <?php echo get_search_form(); ?>
+                    <div class="search_icon">
+                        найти <i class="fas fa-search"></i>
+                    </div>
+
+                    <?php get_search_form(); ?>
 
                     <div class="burger">
                         <img src="<?php echo get_template_directory_uri() . '/assets/img/menu-button-of-three-horizontal-lines.svg'?> " alt="">

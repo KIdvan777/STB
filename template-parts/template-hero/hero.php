@@ -6,7 +6,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="hero">
-                            <img src="<?php echo get_template_directory_uri() . '/assets/img/last.jpg'?>" alt="">
+                        <img src="<?php echo get_template_directory_uri() . '/assets/img/last.jpg'?>" alt="">
                         </div>
                     </div>
                 </div>

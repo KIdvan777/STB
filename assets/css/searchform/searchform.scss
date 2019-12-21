@@ -1,0 +1,34 @@
+@import 'search_icon';
+
+.search_form_overlay_container{
+    display: none;
+}
+
+.search_form_overlay_container_show{
+    display: block;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    opacity: 95%;
+    padding: 100px;
+
+}
+
+.search_form_vissible_close_icon{
+    position: relative;
+    i{
+        color:$main_green;
+        display: inline-block;
+        font-size: 26px;
+        margin-left: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+}
