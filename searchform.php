@@ -1,7 +1,8 @@
 <?php $unique_id = esc_attr( uniqid( 'search-form-' ) ); ?>
-<div class="container search_form_overlay_container">
+<div class="container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12  ">
+            <div class="search_form_overlay_container">
                 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
                     <div class="input-group">
                         <input type="search" id="search_input" class="search_input form-control" name="s"
@@ -17,6 +18,8 @@
                         </span>
                     </div>
                 </form>
+            </div>
+
         </div>
     </div>
 </div>
