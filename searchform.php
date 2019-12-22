@@ -1,4 +1,4 @@
-<?php $unique_id = esc_attr( uniqid( 'search-form-' ) ); ?>
+<!-- <?php $unique_id = esc_attr( uniqid( 'search-form-' ) ); ?> -->
 <div class="container">
     <div class="row">
         <div class="col-md-12  ">
@@ -18,6 +18,9 @@
                         </span>
                     </div>
                 </form>
+                <div class="search_form_overlay__results">
+
+                </div>
             </div>
 
         </div>
