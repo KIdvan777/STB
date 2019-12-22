@@ -1,10 +1,3 @@
 <?php get_header(); ?>
-
-<?php
-
-echo 'hi news';
-
- ?>
-
-
+taxonomy
 <?php get_footer(); ?>

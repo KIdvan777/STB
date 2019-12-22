@@ -1,5 +1,4 @@
 <?php get_template_part('template-parts/template-headers/headers');?>
-
 <div class="container">
 	<div class="row">
 		<div class="col-md-12 flex">
@@ -48,5 +47,4 @@
 		</div>
 	</div>
 </div>
-
-<?php get_footer(); ?>
+<?php get_footer() ?>
