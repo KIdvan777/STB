@@ -27,6 +27,17 @@
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
+	<?php
+	if ( 'product' === get_post_type() ) :
+		?>
+		<div class="entry-meta">
+			<?php
+		echo 'hi';
+		?>
+		</div>
+	<?php endif; ?>
+
+
 	</header><!-- .entry-header -->
 
 	<?php stb_post_thumbnail(); ?>
