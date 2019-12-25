@@ -71,7 +71,7 @@
                                     </div>
                                 </div>
 
-                            <? } ?>
+                            <? } wp_reset_query();?>
                     </div>
                 </div>
             </div>

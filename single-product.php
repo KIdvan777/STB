@@ -1,5 +1,4 @@
-<?php get_header(); ?>
-
+<?php get_template_part('template-parts/template-headers/headers');?>
 <!-- SECTION TOP HITS -->
     <section class="top_hits_section">
         <div class="container">
@@ -15,7 +14,7 @@
                     <div class="top_hits flex">
                         <div class="top_hits_item col-lg-2 col-md-4 col-sm-6">
                             <div class="top_hits_item__img">
-                                <?php the_post_thumbnail(); ?>
+                                <?php 	stb_post_thumbnail(); ?>
                             </div>
                             <div class="top_hits_item__span">
                                 <span>
@@ -48,10 +47,16 @@
 
                         </div>
                     </div>
-
+    <?php wp_list_comments(array(
+			'per_page' => 10, // Пагинация комментариев - по 10 на страницу
+			'reverse_top_level' => false // Показываем последние комментарии в начале
+		)); ?>
                 </div>
             </div>
         </div>
     </section>
 
-<?php get_footer(); ?>
+
+
+
+<?php get_template_part('template-parts/template-footers/footers');?>

@@ -20,7 +20,7 @@
 			<div class="col-md-12 flex">
 				<?php $products_cat_query = new WP_Query(array(
 					'posts_per_page' => 8,
-					'post_type' => 'product',
+					'post_type' => 'stb-product',
 					'tax_query' => array(
 						array(
 							'taxonomy' => 'product-category',
