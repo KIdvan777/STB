@@ -20,6 +20,18 @@ jQuery('.burger').click(function () {
 });
 "use strict";
 
+jQuery(document).ready(function () {
+  jQuery(".owl-carousel").owlCarousel({
+    items: 1,
+    loop: true,
+    nav: true,
+    navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
+    dots: true,
+    autoplay: true
+  });
+});
+"use strict";
+
 var searchOverlay = jQuery('.search_form_overlay_container');
 var searchIcon = jQuery('.search_icon');
 var searchformVissibleCloseIcon = jQuery('.search_form_vissible_close_icon');
@@ -83,10 +95,3 @@ function getResults() {
   resultDiv.html('result');
   isSipnnerVissible = false;
 }
-"use strict";
-
-jQuery(document).ready(function () {
-  jQuery(".owl-carousel").owlCarousel({
-    items: 1
-  });
-});

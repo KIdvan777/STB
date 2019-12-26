@@ -307,6 +307,13 @@ footer{margin-top:20px;background-color:#85c441;padding-top:20px;padding-bottom:
 .animated.faster{-webkit-animation-duration:500ms;animation-duration:500ms}
 .animated.slow{-webkit-animation-duration:2s;animation-duration:2s}
 .animated.slower{-webkit-animation-duration:3s;animation-duration:3s}
+.owl-theme .owl-nav{margin-top:0;position:absolute;top:50%;left:0;width:100%;padding:20px}
+.owl-theme .owl-nav button{width:50px;height:50px;border:0}
+.owl-theme .owl-nav button i{display:block;font-size:30px;color:#fff}
+.owl-theme .owl-nav .owl-prev{float:left;opacity:1}
+.owl-theme .owl-nav .owl-prev:hover{background:rgba(255,255,255,0);border-radius:50px;border:1px solid #fff}
+.owl-theme .owl-nav .owl-next{float:right;opacity:1}
+.owl-theme .owl-nav .owl-next:hover{background:rgba(255,255,255,0);border-radius:50px;border:1px solid #fff}
 @media screen and (min-width:37.5em){.menu-toggle{display:none}
 .main-navigation ul{display:block}
 }@media screen and (min-width:768px){.burger{display:none}

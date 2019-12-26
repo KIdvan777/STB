@@ -4,15 +4,16 @@
         <section>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 owl-carousel">
+                    <div class="col-md-12 owl-carousel owl-theme">
                         <div class="hero">
                         <img src="<?php echo get_theme_mod('main_page_hero_image_1_setting');?>" alt="">
                         </div>
                         <div class="hero">
-                        <img src="<?php echo get_theme_mod('main_page_hero_image_1_setting');?>" alt="">2
+                        <img src="<?php echo get_theme_mod('main_page_hero_image_2_setting');?>" alt="">
                         </div>
                         <div class="hero">
-                        <img src="<?php echo get_theme_mod('main_page_hero_image_1_setting');?>" alt="">3
+                        <?php echo get_theme_mod('main_page_hero_image_3_setting');?>
+                        
                         </div>
                     </div>
                 </div>
@@ -26,10 +27,18 @@
             </div>
         </section>
     <?}else{?>
-        <section>
-            <div class="hero_3">
+
+            <div class="owl-carousel owl-theme">
+                <div class="hero">
                 <img src="<?php echo get_theme_mod('main_page_hero_image_1_setting');?>" alt="">
+                </div>
+                <div class="hero">
+                <img src="<?php echo get_theme_mod('main_page_hero_image_1_setting');?>" alt="">
+                </div>
+                <div class="hero">
+                <img src="<?php echo get_theme_mod('main_page_hero_image_1_setting');?>" alt="">
+                </div>
             </div>
-        </section>
+
     <?}
 ?>
