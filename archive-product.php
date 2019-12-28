@@ -17,18 +17,20 @@
 
 				</main><!-- #main -->
 			</div><!-- #primary -->
-			<div class="col-md-12 flex">
+			<div class="top_hits col-md-12 flex">
+
 				<?php $products_cat_query = new WP_Query(array(
-					'posts_per_page' => 8,
-					'post_type' => 'stb-product',
-					'tax_query' => array(
-						array(
-							'taxonomy' => 'product-category',
-							'field'    => 'id',
-							'terms'    => 24
-						)
-					)
-				));
+					// 'posts_per_page' => 20,
+					'post_type' => 'product',
+					// 'tax_query' => array(
+					// array(
+					// 		'taxonomy' => 'product-category',
+					// 		'field'    => 'id',
+					// 		'terms'    => 24
+					// 	)
+					// )
+				));?>
+				<?php
 					while( $products_cat_query->have_posts() ){
 						$products_cat_query->the_post();?>
 
@@ -53,7 +55,7 @@
 			</div>
 		</div>
 		<div class="col-md-4">
-			<?php get_sidebar(); ?>
+			<?php get_template_part('template-parts/filter/filter'); ?>
 		</div>
 		</div>
 	</div>

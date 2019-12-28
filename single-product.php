@@ -20,14 +20,7 @@
                                 <?php get_template_part('template-parts/filter/filter'); ?>
                             </div>
                             <div class="product_properties col-md-12">
-                                <?php $fields = get_field_objects();
-
-                                    // vardump($fields);
-                                    foreach($fields as $field){
-                                        echo $field['name'] . ':' . $field['value'] . '<br>';
-                                    }
-                                 ?>
-
+                                <?php //get_template_part('template-parts/single/single-props'); ?>
 
                             </div>
                         </div>

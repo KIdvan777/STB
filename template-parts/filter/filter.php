@@ -2,24 +2,25 @@
     <input type="range" name="cost" value="">
 </form>
 
-<form class="" action="index.html" method="post">
+<form class="" action="" method="get">
     <input type="checkbox" name="dasd" value="">
 </form>
 
-<form class="" action="index.html" method="post">
+
+
+
+
+
+<!--
+<form class="" action="<?php get_template_directory_uri() . '/includes/filter/filter.php';?>" method="get">
     <label for="power">power</label>
-    <input type="checkbox" name="power" value="">
-    <?php if(isset($_GET['power'])){
-        $power = $_GET['power'];
+    <input type="text" name="power" value="">
+</form> -->
 
-    } ?>
 
-    <?php     $product_power_request = new WP_Query(array(
-            'post_type' => 'product',
-            'post_id' => 185
-        ));
-        // vardump($product_power_request); ?>
-</form>
+
+
+
 
 <div class="filter_categories">
     <?php $terms = get_terms( 'product-category' );

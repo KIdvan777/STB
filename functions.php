@@ -10,12 +10,14 @@ include( get_template_directory() . '/includes/content_width.php' );
 include( get_template_directory() . '/includes/front/widgets.php' );
 include( get_template_directory() . '/includes/tax-thumb.php' );
 include( get_template_directory() . '/includes/var_dump.php' );
+include( get_template_directory() . '/includes/filter/filter.php' );
 
 // stb_hooks
 add_action( 'wp_enqueue_scripts', 'stb_scripts' );
 add_action( 'after_setup_theme', 'stb_setup' );
 add_action( 'after_setup_theme', 'stb_content_width', 0 );
 add_action( 'widgets_init', 'stb_widgets_init' );
+add_action( 'pre_get_posts', 'stb_filter_pre_get_product_posts' );
 
 // stb_shortcodes
 
