@@ -1,14 +1,13 @@
-<?php
-    $field = get_field_object('power');
-    $values = explode(',', $_GET['power']);
 
-    if( $field['choices'] ): ?>
-        <ul>
-            <?php foreach( $field['choices'] as $value => $label ): ?>
 
-                <input type="checkbox" value="<?php echo $value;?>"
-                <?php if($value):?>checked="checked"<?php endif;?>/>
-                <?php echo $label; ?></li>
-            <?php endforeach; ?>
-        </ul>
-    <?php endif; ?>
+
+    <div class="">
+        <?php $fields = get_field_objects(); ?>
+        <?php foreach($fields as $field_prop): ?>
+
+            <?php //vardump($field_prop);
+            echo '<li>'. $field_prop['label'] .':'. $field_prop['value'] .'</li>'
+         ?>
+
+        <?php endforeach; ?>
+    </div>

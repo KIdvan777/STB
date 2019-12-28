@@ -95,3 +95,32 @@ function getResults() {
   resultDiv.html('result');
   isSipnnerVissible = false;
 }
+"use strict";
+
+jQuery('#archive-filters').on('change', 'input[type="checkbox"]', function () {
+  // vars
+  var url = '';
+  args = {}; // loop over filters
+
+  jQuery('#archive-filters .filter').each(function () {
+    // vars
+    var filter = jQuery(this).data('filter'),
+        vals = []; // find checked inputs
+
+    jQuery(this).find('input:checked').each(function () {
+      vals.push(jQuery(this).val());
+    }); // append to args
+
+    args[filter] = vals.join(',');
+  }); // update url
+
+  url += '?'; // loop over args
+
+  jQuery.each(args, function (name, value) {
+    url += name + '=' + value + '&';
+  }); // remove last &
+
+  url = url.slice(0, -1); // reload page
+
+  window.location.replace(url);
+});

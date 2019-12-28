@@ -20,7 +20,7 @@
                                 <?php get_template_part('template-parts/filter/filter'); ?>
                             </div>
                             <div class="product_properties col-md-12">
-                                <?php //get_template_part('template-parts/single/single-props'); ?>
+                                <?php get_template_part('template-parts/single/single-props'); ?>
 
                             </div>
                         </div>
