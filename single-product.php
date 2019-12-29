@@ -17,11 +17,10 @@
                                 <?php the_post_thumbnail( 'medium_large' );?>
                             </div>
                             <div class="col-md-4">
-                                <?php get_template_part('template-parts/filter/filter'); ?>
+                                <?php get_template_part('template-parts/filter/filter-simple'); ?>
                             </div>
                             <div class="product_properties col-md-12">
-                                <?php get_template_part('template-parts/single/single-props'); ?>
-
+                                <?php //get_template_part('template-parts/filter/filter-simple'); ?>
                             </div>
                         </div>
                     </div>
